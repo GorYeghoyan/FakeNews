@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="fakeNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="331"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="331"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   News Header" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsJ-Iy-iiS">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="T6b-Wd-DEJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nir-dh-iLf">
+                        <rect key="frame" x="0.0" y="40" width="362" height="198"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="198" id="YJe-xu-D8L"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NewsText" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgw-lC-oOP">
+                        <rect key="frame" x="0.0" y="238" width="362" height="86"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="86" id="2NG-Is-2Wx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Tgw-lC-oOP" firstAttribute="top" secondItem="Nir-dh-iLf" secondAttribute="bottom" id="1pB-TP-tY8"/>
+                    <constraint firstItem="Nir-dh-iLf" firstAttribute="top" secondItem="SsJ-Iy-iiS" secondAttribute="bottom" id="DEc-al-ZnZ"/>
+                    <constraint firstItem="SsJ-Iy-iiS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gji-qO-BMO"/>
+                    <constraint firstAttribute="trailing" secondItem="Tgw-lC-oOP" secondAttribute="trailing" id="Hls-xI-WL0"/>
+                    <constraint firstItem="SsJ-Iy-iiS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QHD-gT-2B3"/>
+                    <constraint firstItem="Tgw-lC-oOP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SA5-Rk-ndJ"/>
+                    <constraint firstItem="Tgw-lC-oOP" firstAttribute="trailing" secondItem="Nir-dh-iLf" secondAttribute="trailing" id="VnO-Jm-UWt"/>
+                    <constraint firstItem="Nir-dh-iLf" firstAttribute="trailing" secondItem="SsJ-Iy-iiS" secondAttribute="trailing" id="WGf-jm-dcV"/>
+                    <constraint firstAttribute="trailing" secondItem="SsJ-Iy-iiS" secondAttribute="trailing" id="mua-zM-463"/>
+                    <constraint firstItem="Nir-dh-iLf" firstAttribute="leading" secondItem="SsJ-Iy-iiS" secondAttribute="leading" id="qpw-Di-oda"/>
+                    <constraint firstItem="Tgw-lC-oOP" firstAttribute="leading" secondItem="Nir-dh-iLf" secondAttribute="leading" id="x3t-PQ-mDy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="header" destination="SsJ-Iy-iiS" id="cvR-Mm-6Eg"/>
+                <outlet property="newsDescriptionText" destination="Tgw-lC-oOP" id="Hlw-Ls-lY7"/>
+                <outlet property="newsImage" destination="Nir-dh-iLf" id="N2S-u1-eVw"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="138.95089285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
