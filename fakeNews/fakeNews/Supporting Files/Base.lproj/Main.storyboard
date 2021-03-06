@@ -142,9 +142,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Add News" image="plus" catalog="system" id="MvL-AT-tC1"/>
                     <connections>
+                        <outlet property="cancelButton" destination="Diw-bz-Ngs" id="iYE-xV-1Wu"/>
                         <outlet property="descriptionTextView" destination="80h-QJ-VMb" id="cCu-YA-2vj"/>
                         <outlet property="headreTextField" destination="sdg-6T-T1E" id="XRQ-Rp-spc"/>
                         <outlet property="mediaCollectionView" destination="UAA-to-Ryk" id="WwR-DP-faD"/>
+                        <outlet property="publishButtun" destination="Zeh-4E-Yla" id="ngV-jQ-8fq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGo-ef-73R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -232,6 +234,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Jx-yG-uYO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </tabBar>
@@ -255,7 +258,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="exd-fb-TS7">
-                                <rect key="frame" x="0.0" y="0.0" width="460" height="56"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>

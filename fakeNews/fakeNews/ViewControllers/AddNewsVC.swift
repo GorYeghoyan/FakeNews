@@ -13,7 +13,9 @@ class AddNewsVC: UIViewController {
     @IBOutlet weak var headreTextField: UITextField!
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    @IBOutlet weak var publishButtun: UIButton!
     
+    @IBOutlet weak var cancelButton: UIButton!
     
     
     
@@ -29,12 +31,16 @@ class AddNewsVC: UIViewController {
         mediaCollectionView.delegate = self
         descriptionTextView.layer.borderWidth = 1
         descriptionTextView.layer.borderColor = UIColor.systemGray3.cgColor
+        publishButtun.buttonShape()
+        cancelButton.buttonShape()
     }
     
     
     @IBAction func publish(_ sender: UIButton) {
+        
     }
     @IBAction func cancel(_ sender: UIButton) {
+        
     }
     
     
@@ -60,4 +66,10 @@ extension AddNewsVC: UICollectionViewDataSource {
 
 extension AddNewsVC: UICollectionViewDelegate {
     
+}
+
+extension UIButton {
+    func buttonShape() {
+        layer.cornerRadius = 8
+    }
 }
