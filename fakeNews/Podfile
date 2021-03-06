@@ -10,7 +10,11 @@ target 'fakeNews' do
 pod 'Firebase/Analytics'
 # add pods for any other desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
-
+# Add the pods for any other Firebase products you want to use in your app
+# For example, to use Firebase Authentication and Cloud Firestore
+platform :ios, '13.0'
+pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
   target 'fakeNewsTests' do
     inherit! :search_paths
     # Pods for testing
